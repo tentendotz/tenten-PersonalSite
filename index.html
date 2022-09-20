@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tenten Dotz</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Appearance Scripts before firing DOMContentLoaded event -->
+  <script defer src="js/appearance.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/color.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/e31ff82676.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+  <!-- SVG Template -->
+  <svg viewBox="0 0 25 25" width="25" height="25">
+    <symbol id="logo">
+      <path
+        d="M22.2803 0.515512C22.3975 0.848934 22.1044 3.02603 21.7971 4.10018C21.6251 4.7015 21.1259 5.27669 21.1259 5.27669C21.1259 5.27669 21.3907 5.25637 21.6286 5.08489C21.8306 4.93925 21.9759 4.75446 21.9759 4.75446C21.9759 4.75446 22.059 5.50505 21.883 6.00633C21.6859 6.56789 21.4471 7.04069 21.1162 7.43164C20.7286 7.88947 20.1945 8.19988 20.1945 8.19988C20.1945 8.19988 20.628 8.17034 20.8093 8.0827C21.06 7.96147 21.1919 7.85429 21.1919 7.85429C21.1919 7.85429 21.2292 8.58296 21.0354 8.98006C20.7646 9.53518 20.4551 10.0681 20.0251 10.4969C19.6375 10.8833 18.9394 11.1068 18.9394 11.1068C18.9394 11.1068 19.2111 11.2642 19.4912 11.2453C19.8618 11.2203 20.0108 11.1824 20.0108 11.1824C20.0108 11.1824 19.889 11.8376 19.5172 12.2841C18.9964 12.9097 17.4687 13.6635 16.5558 13.782C15.8736 13.8705 15.051 13.824 15.051 13.824C15.051 13.824 16.46 15.6057 17.0341 16.7531C17.4708 17.6262 17.2682 18.8907 17.5638 19.8251C17.8577 20.7546 19.2679 22.3469 19.5111 23.2919C19.5814 23.5649 17.5251 23.6251 17.2013 23.3452C16.3436 22.6038 16.0923 21.2743 15.2418 20.5239C13.8194 19.2688 10.8421 18.7978 9.54173 17.4064C8.07979 15.8421 8.02576 14.1176 7.76411 13.3926C7.56012 12.8274 6.75866 12.0224 6.26761 11.8233C5.91754 11.6813 0.476858 13.6615 0.476858 13.6615L4.73612 9.80254C4.73612 9.80254 5.31936 8.41649 5.57227 7.99299C5.92997 7.394 6.42448 6.99938 6.98549 6.80731C8.09295 6.42816 9.33373 6.88051 9.87718 7.30698C10.7111 7.70898 11.7076 9.66343 11.7076 9.66343C11.7076 9.66343 13.1538 7.82449 15.4273 5.56503C17.1888 3.81437 18.3825 3.19269 19.9619 2.18252C20.7162 1.7001 21.9602 0.456702 22.2803 0.515512Z">
+      </path>
+    </symbol>
+  </svg>
+
+
+  <!-- Header Area -->
+
+  <header>
+
+    <!-- Navigation Bar Section -->
+    <nav class="navbar fixed-top navbar-expand-md">
+
+      <!-- Brand name and Logo -->
+      <a class="navbar-brand" href="index.html" translate="no">Tenten Dotz
+        <svg class="align-text-top logo">
+          <use href="#logo" />
+        </svg>
+      </a>
+
+      <!-- Hamburger Menu Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars collapsed-icon"></i>
+      </button>
+
+      <!-- Nav Bar Item -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#post">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/tentendotz/tenten-PersonalSite">
+              <i class="fa-brands fa-github"></i> Source
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- Main Content Area -->
+
+  <main class="white-section">
+
+    <!-- Hero Section -->
+    <section id="hero">
+
+      <div class="container-fluid">
+
+        <div class="container">
+
+          <img class="top-cloud" src="images/cloud.webp" alt="cloud-img" width="150" height="48">
+
+          <div class="hero-title">
+            <h1 class="display-1" translate="no">Teten Dotz</h1>
+            <img class="kingfisher" src="images/kingfisher.webp" alt="kingfisher-img" width="50" height="50">
+          </div>
+
+          <h2>Welcome my portfolio site.</h2>
+          <img class="bottom-cloud" src="images/cloud.webp" alt="cloud-img" width="150" height="48">
+
+        </div>
+
+        <div class="svg-nature">
+
+          <svg class="mountain-polygon" viewBox="0, 0, 1920, 350" preserveAspectRatio="none">
+            <polygon points="1920 823 0 823 0 0 396 101 835 31 1574 149 1920 17 1920 823"></polygon>
+          </svg>
+          <svg class="meadow" viewBox="0, 0, 1920, 200" preserveAspectRatio="none">
+            <rect width="1920" height="200"></rect>
+          </svg>
+
+          <img class="flamingo" src="images/flamingo.webp" alt="flamingo-img" width="140" height="140">
+          <img class="fox" src="images/fox.webp" alt="fox-img" width="90" height="90">
+          <img class="giraffe" src="images/giraffe.webp" alt="giraffe-img" width="300" height="300">
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Profile Section -->
+    <section id="profile">
+
+      <div class="container-fluid">
+        <div class="container">
+
+          <div class="flex-box">
+            <div>
+              <h3>Tenten</h3>
+              <p>Junior iOS and Web Developer</p>
+            </div>
+            <img class="avatar" src="images/tenten-image.webp" alt="profile picture" width="150" height="150">
+          </div>
+
+          <h3>About me</h3>
+          <p>I'm focused on mobile app development.
+            In particular, my preferred stack is Swift.
+            Regarding web development, I prefer the front end to the back end.
+            I'm a career changer transitioning from sales rep to software developer.
+            So now, I'm planning to release my iOS app this year</p>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+      <div class="container-fluid">
+        <div class="container">
+
+          <h3>Skills</h3>
+
+          <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+
+              <ul class="skills-column" type="none" translate="no">
+                <li>
+                  <span class="ability-name">Swift</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name ">UIKit</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">SwiftUI</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">HTML/CSS</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Javascript</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Node.js</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Bootstrap</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">jQuery</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+
+              <ul class="skills-column" type="none" translate="no">
+                <li>
+                  <span class="ability-name">Firebase Auth</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Cloud Firestore</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Firebase Hosting</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">CocoaPods</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Git</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Mermaid.js</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Notion
+                  </span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-name">Design</span>
+                  <span class="ability-score">
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span class="filled-star">★</span>
+                    <span>★</span>
+                  </span>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+      <div class="container-fluid">
+        <div class="container">
+
+          <h3>Projects</h3>
+          <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+              <div class="card">
+                <a href="https://tentendotz.notion.site/Project-List-b6f41186ad594382bdb6706a4f4dc60a">
+                  <div class="card-body">
+                    <img class="img-fluid rounded-start" src="images/project-list.webp" alt="Project list image"
+                      width="360" height="270">
+                    <p class="card-nav">View my Notion page</p>
+                    <span
+                      class="card-url">https://tentendotz.notion.site/Project-List-b6f41186ad594382bdb6706a4f4dc60a</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <h4>Project List</h4>
+              <p>Using Notion, I publish the projects which I've developed until now.
+                Just now being renewed. Stay tuned for updates!</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Posts Section -->
+    <section id="post">
+
+      <div class="container-fluid">
+        <div class="container">
+
+          <h3>Twitter</h3>
+          <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+              <a href="https://twitter.com/tentenblog" translate="no"><i class="fa-brands fa-twitter"></i>
+                @tentenblog
+              </a>
+              <p>I tweet my learning progress with the #tentenblog_New_dot hashtag every
+                day.</p>
+
+              <div class="tweet-list">
+                <h4>Tweet Lists</h4>
+                <ul translate="no">
+                  <li><a href="https://twitter.com/i/events/1561116294023245825?s=20">Swift vol.1</a></li>
+                  <li><a href="https://twitter.com/i/events/1565455754256998400?s=20">Swift vol.2</a></li>
+                  <li><a href="https://twitter.com/i/events/1561124878283309057?s=20">SwiftUI</a></li>
+                  <li><a href="https://twitter.com/i/events/1561104910388961280?s=20">HTML & CSS & Bootstrap</a></li>
+                  <li><a href="https://twitter.com/i/events/1561110100571410432?s=20">JavaScript & DOM & jQuery</a></li>
+                  <li><a href="https://twitter.com/i/events/1561114594914869250?s=20">Tool & Service & OS</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-12 twitter-timeline">
+              <!-- Embedded Twitter Timeline  -->
+              <div class="tweet-user-timeline"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Social Media Section -->
+    <section id="social-media">
+
+      <div class="container-fluid">
+        <div class="container">
+
+          <h3>Social Media</h3>
+
+          <ul type="none" translate="no">
+            <li>
+              <a href="https://github.com/tentendotz"><i class="fa-brands fa-github"></i> GitHub / @tentendotz</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/tentenblog"><i class="fa-brands fa-twitter"></i> Twitter / @tentenblog</a>
+            </li>
+            <li>
+              <a href="https://qiita.com/tentendotz"><i class="fa-solid fa-q"></i> Qiita / @tentendotz</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- Footer Area -->
+
+  <footer>
+    <div class="colored-section" id="footer">
+
+      <div class="footer-container">
+        <p class="copy-right" translate="no">© 2022 Tenten Dotz</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Script for Twitter API -->
+  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/index.js"></script>
+
+
+</body>
+
+
+
+</html>

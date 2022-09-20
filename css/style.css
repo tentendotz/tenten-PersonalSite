@@ -1,0 +1,341 @@
+/* Element Style
+------------------------------------- */
+body {
+  color: var(--invert-color);
+  background-color: var(--theme-color);
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  color: var(--theme-color);
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  color: var(--theme-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  color: var(--accent-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+h4, h5, h6 {
+  color: var(--accent-color);
+  font-family: "Montserrat", sans-serif;
+  margin: 0.5em 0;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: var(--vivid-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--highlight-color);
+  text-decoration: solid underline 0.11em;
+  text-underline-offset: 0.3em;
+}
+
+
+/* Common Section Style
+------------------------------------- */
+.white-section {
+  background-color: var(--bg-color);
+}
+
+.colored-section {
+  background-color: var(--theme-color);
+}
+
+.container-fluid {
+  padding: 5%;
+}
+
+.container {
+  width: auto;
+  max-width: 768px;
+  margin: auto;
+  text-align: start;
+}
+
+
+/* Navigation Bar Section
+------------------------------------- */
+.navbar {
+  background-color: var(--theme-color);
+}
+
+.navbar-brand {
+  color: var(--shadow-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 1em;
+}
+
+.navbar-brand:hover {
+  color: var(--bright-color);
+  text-decoration: none;
+}
+
+.logo {
+  fill: var(--shadow-color);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+/* JS fills the logo in color on hover. */
+.fill-highlight {
+  fill: var(--bright-color);
+}
+
+.nav-item {
+  margin: 0.2em 0;
+}
+
+.nav-link {
+  color: var(--shadow-color);
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--bright-color);
+}
+
+
+
+
+/* Hero Section
+------------------------------------- */
+#hero .container-fluid {
+  position: relative;
+  padding: 8% 0 3%;
+}
+
+#hero .container {
+  position: relative;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.hero-title {
+  display: flex;
+  justify-content: center;
+}
+
+.kingfisher {
+  width: 8%;
+  max-width: 50px;
+  height: auto;
+  align-self: start;
+  position: relative; /* For Stacking Order */
+}
+
+.top-cloud {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  right: 2%;
+}
+
+.bottom-cloud {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  left: 2%;
+}
+
+.svg-nature {
+  position: relative;
+}
+
+.mountain-polygon {
+  fill: var(--shadow-color);
+  position: relative;
+  top: 5px;
+}
+
+.meadow {
+  fill: var(--muted-color);
+}
+
+.flamingo {
+  width: 13%;
+  max-width: 140px;
+  height: auto;
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
+}
+
+.fox {
+  width: 9%;
+  max-width: 90px;
+  height: auto;
+  position: absolute;
+  left: 30%;
+  bottom: 15%;
+}
+
+.giraffe {
+  width: 23%;
+  max-width: 300px;
+  height: auto;
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+
+
+/* Profile Section
+------------------------------------- */
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: solid 0.1em var(--accent-color);
+  outline: solid 0.15em var(--bright-color);
+  margin-bottom: 1em;
+}
+
+
+/* Skills Section
+------------------------------------- */
+.skills-column {
+  padding: 0;
+  margin: 0;
+}
+
+.skills-column li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-column li:nth-child(even) {
+  background-color: var(--tint-color);
+}
+
+.ability-name {
+  display: inline-block;
+  width: 55%;
+}
+
+.ability-score {
+  color: var(--star-base-color);
+  align-self: center;
+}
+
+.filled-star {
+  color: var(--accent-color);
+}
+
+
+/* Projects Section
+------------------------------------- */
+.card {
+  text-align: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card:hover {
+  outline: solid 0.17em var(--highlight-color);
+}
+
+#projects a {
+  display: block;
+  text-decoration: none;
+}
+
+.card-nav {
+  color: var(--accent-color);
+  margin: 2% 0 0;
+}
+
+.card-url {
+  color: var(--invert-color);
+  font-size: 0.7rem;
+}
+
+
+/* Posts Section
+------------------------------------- */
+.tweet-list {
+  margin: 10% 0;
+}
+
+#post li {
+  margin-bottom: 0.5em;
+}
+
+.twitter-timeline {
+  margin: auto;
+}
+
+
+/* Social Media Section
+------------------------------------- */
+#social-media .container-fluid {
+  padding: 5% 5% 8%;
+}
+
+#social-media ul {
+  padding-left: 0.2em;
+}
+
+#social-media li {
+  margin-bottom: 1em;
+}
+
+
+/* Footer Area
+------------------------------------- */
+.footer-container {
+  padding: 1.5% 0 0.5%;
+}
+
+.copy-right {
+  color: var(--shadow-color);
+  font-size: 0.75rem;
+}
+
+
+/* Media Queries
+ ------------------------------------- */
+@media (max-width: 767px) {
+  h4, h5, h6 {
+    margin-top: 1.5em;
+  }
+
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .avatar {
+    width: 45%;
+    align-self: end;
+  }
+}
+
+@media (max-width: 220px) {
+  #hero .container-fluid {
+    padding: 24% 0 3%;
+  }
+}

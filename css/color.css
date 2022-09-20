@@ -1,0 +1,13 @@
+:root {
+  --bg-color: #ffffff;
+  --invert-color: #40514e;
+  --theme-color: #66bfbf;
+  --accent-color: #129ca1;
+  --bright-color: #f2ffff;
+  --vivid-color: #27a2ba;
+  --highlight-color: #31e8d0;
+  --shadow-color: #eaf6f6;
+  --muted-color: #c8dcde;
+  --tint-color: #f4f4f4;
+  --star-base-color: #ddebf0;
+}
