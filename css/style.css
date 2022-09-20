@@ -1,3 +1,15 @@
+/* Fade-in effect
+------------------------------------- */
+.disappeared {
+  opacity: 0;
+}
+
+.show-off {
+  opacity: 1;
+  transition: opacity 0.2s ease-out 0.3s;
+}
+
+
 /* Element Style
 ------------------------------------- */
 body {

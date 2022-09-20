@@ -1,3 +1,25 @@
+/* MARK: - Fade-in effect
+----------------------------------------------------- */
+const fadeInTarget = document.querySelectorAll(".container-fluid");
+
+hidden();
+window.addEventListener("load", fadeIn);
+
+function hidden() {
+  if (!fadeInTarget) return;
+  for (var i = 0; i < fadeInTarget.length; i++) {
+    fadeInTarget[i].classList.add("disappeared");
+  }
+}
+
+function fadeIn() {
+  if (!fadeInTarget) return;
+  for (var i = 0; i < fadeInTarget.length; i++) {
+    fadeInTarget[i].classList.add("show-off");
+  }
+}
+
+
 /* MARK: - Twitter Script
 ----------------------------------------------------- */
 window.twttr = (function (d, s, id) {
