@@ -12,4 +12,39 @@ brandName.addEventListener("mouseout", function () {
 });
 
 
+/* MARK: - Turn into Top Bar Nav or Dropdown Menu Nav
+----------------------------------------------------- */
+const mql = window.matchMedia("(max-width: 767px)");
+const navbarList = document.querySelector(".navbar-nav").classList;
+const navItems = document.querySelectorAll(".nav-item");
+const navLinks = document.querySelectorAll("#navbarSupportedContent a");
 
+handleMediaQuery(mql);
+mql.addEventListener("change", handleMediaQuery);
+
+function handleMediaQuery(e) {
+  e.matches ? dropdownMenu() : topBarMenu();
+}
+
+// if viewport ≦ 767px, Dropdown Menu style.
+function dropdownMenu() {
+  navbarList.add("dropdown-menu");
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].classList.remove("horizontal-padding");
+  }
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].classList.remove("nav-link");
+    navLinks[i].classList.add("dropdown-item");
+  }
+}
+// if viewport > 767px, Top Bar Menu style.
+function topBarMenu() {
+  navbarList.remove("dropdown-menu");
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].classList.add("horizontal-padding");
+  }
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].classList.remove("dropdown-item");
+    navLinks[i].classList.add("nav-link");
+  }
+}

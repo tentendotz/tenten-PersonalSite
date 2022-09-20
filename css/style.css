@@ -114,7 +114,20 @@ a:hover {
   color: var(--bright-color);
 }
 
+/* JS controls nav-item's padding. */
+.horizontal-padding {
+  padding: 0 0.5em;
+}
 
+/* JS converts Top Bar style into Dropdown Menu style. */
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-item {
+  font-weight: bold;
+}
 
 
 /* Hero Section
