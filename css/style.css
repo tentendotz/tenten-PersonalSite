@@ -101,13 +101,10 @@ a:hover {
   fill: var(--bright-color);
 }
 
-.nav-item {
-  margin: 0.2em 0;
-}
-
 .nav-link {
   color: var(--shadow-color);
   font-weight: bold;
+  padding: 0.7em 0;
 }
 
 .nav-link:hover {
@@ -127,6 +124,7 @@ a:hover {
 
 .dropdown-item {
   font-weight: bold;
+  padding: 0.5em 1em;
 }
 
 

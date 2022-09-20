@@ -48,3 +48,24 @@ function topBarMenu() {
     navLinks[i].classList.add("nav-link");
   }
 }
+
+
+/* MARK: - Hamburger Menu auto closing event
+----------------------------------------------------- */
+document.addEventListener("click", function (e) {
+  closeToggler(e.target);
+});
+document.addEventListener("touchstart", function (e) {
+  closeToggler(e.target);
+});
+
+function closeToggler(element) {
+  if (
+    element.classList.contains("navbar-toggler") ||
+    element.classList.contains("collapsed-icon")
+  ) {
+    return;
+  } else {
+    document.getElementById("navbarSupportedContent").classList.remove("show");
+  }
+}
