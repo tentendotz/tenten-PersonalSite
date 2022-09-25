@@ -23,27 +23,27 @@ handleMediaQuery(mql);
 mql.addEventListener("change", handleMediaQuery);
 
 function handleMediaQuery(e) {
-  e.matches ? dropdownMenu() : topBarMenu();
+  e.matches ? dropdownStyle() : topBarStyle();
 }
 
 // if viewport ≦ 767px, Dropdown Menu style.
-function dropdownMenu() {
+function dropdownStyle() {
   navbarList.add("dropdown-menu");
-  for (var i = 0; i < navItems.length; i++) {
+  for (let i = 0; i < navItems.length; i++) {
     navItems[i].classList.remove("horizontal-padding");
   }
-  for (var i = 0; i < navLinks.length; i++) {
+  for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].classList.remove("nav-link");
     navLinks[i].classList.add("dropdown-item");
   }
 }
 // if viewport > 767px, Top Bar Menu style.
-function topBarMenu() {
+function topBarStyle() {
   navbarList.remove("dropdown-menu");
-  for (var i = 0; i < navItems.length; i++) {
+  for (let i = 0; i < navItems.length; i++) {
     navItems[i].classList.add("horizontal-padding");
   }
-  for (var i = 0; i < navLinks.length; i++) {
+  for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].classList.remove("dropdown-item");
     navLinks[i].classList.add("nav-link");
   }
@@ -52,20 +52,36 @@ function topBarMenu() {
 
 /* MARK: - Hamburger Menu auto closing event
 ----------------------------------------------------- */
-document.addEventListener("click", function (e) {
-  closeToggler(e.target);
-});
-document.addEventListener("touchstart", function (e) {
-  closeToggler(e.target);
+let touched = false;
+
+document.addEventListener("touchend", function (e) {
+  touched = true;
+  togglerAction(e.target);
 });
 
-function closeToggler(element) {
-  if (
-    element.classList.contains("navbar-toggler") ||
-    element.classList.contains("collapsed-icon")
-  ) {
-    return;
-  } else {
+document.addEventListener("click", function (e) {
+  touched ? (touched = false) : togglerAction(e.target);
+  
+  if (e.target.classList.contains("dropdown-item")) {
     document.getElementById("navbarSupportedContent").classList.remove("show");
   }
+});
+
+function togglerAction(searchElement) {
+  if (!checkKey(searchElement.classList)) {
+    document.getElementById("navbarSupportedContent").classList.remove("show");
+  }
+  // If checkKey() returned true, Bootstrap would control menu behavior.
+}
+
+function checkKey(classNames) {
+  const validKeys = ["navbar-toggler", "icon-bar", "dropdown-item"];
+  let answer = false;
+
+  for (let i = 0; i < classNames.length; i++) {
+    if (validKeys.includes(classNames[i])) {
+      answer = true;
+    }
+  }
+  return answer;
 }

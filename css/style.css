@@ -87,13 +87,14 @@ a:hover {
 ------------------------------------- */
 .navbar {
   background-color: var(--theme-color);
+  padding: 0.7em;
 }
 
 .navbar-brand {
   color: var(--shadow-color);
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 0 1em;
+  margin: 0 0.4em;
 }
 
 .navbar-brand:hover {
@@ -113,10 +114,33 @@ a:hover {
   fill: var(--bright-color);
 }
 
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8%;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  background-color: var(--accent-color);
+}
+
+.icon-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 16px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
 .nav-link {
   color: var(--shadow-color);
   font-weight: bold;
-  padding: 0.7em 0;
 }
 
 .nav-link:hover {
@@ -130,7 +154,8 @@ a:hover {
 
 /* JS converts Top Bar style into Dropdown Menu style. */
 .dropdown-menu {
-  right: 0;
+  right: 2px;
+  top: 3.7em;
   left: auto;
 }
 

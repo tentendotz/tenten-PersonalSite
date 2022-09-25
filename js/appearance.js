@@ -7,14 +7,14 @@ window.addEventListener("load", fadeIn);
 
 function hidden() {
   if (!fadeInTarget) return;
-  for (var i = 0; i < fadeInTarget.length; i++) {
+  for (let i = 0; i < fadeInTarget.length; i++) {
     fadeInTarget[i].classList.add("disappeared");
   }
 }
 
 function fadeIn() {
   if (!fadeInTarget) return;
-  for (var i = 0; i < fadeInTarget.length; i++) {
+  for (let i = 0; i < fadeInTarget.length; i++) {
     fadeInTarget[i].classList.add("show-off");
   }
 }
