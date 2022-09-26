@@ -1,6 +1,6 @@
 /* MARK: - Logo highlighting event
 ----------------------------------------------------- */
-const brandName = document.querySelector(".navbar-brand");
+const brandName = document.querySelector(".brand-name");
 const logo = document.querySelector(".logo");
 
 brandName.addEventListener("mouseover", function () {

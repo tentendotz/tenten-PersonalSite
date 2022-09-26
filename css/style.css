@@ -22,7 +22,7 @@ body {
 
 h1 {
   color: var(--theme-color);
-  font-family: "Sacramento", cursive;
+  font-family: 'Clicker Script', cursive;
 }
 
 h2 {
@@ -34,13 +34,13 @@ h3 {
   color: var(--accent-color);
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 
 h4, h5, h6 {
   color: var(--accent-color);
   font-family: "Montserrat", sans-serif;
-  margin: 0.5em 0;
+  margin-bottom: 0.5em;
 }
 
 p {
@@ -50,14 +50,22 @@ p {
 a {
   color: var(--vivid-color);
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
 }
 
 a:hover {
   color: var(--highlight-color);
-  text-decoration: solid underline 0.11em;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.11em;
   text-underline-offset: 0.3em;
+}
+
+section:target::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin-top: -50px;
 }
 
 
@@ -72,7 +80,7 @@ a:hover {
 }
 
 .container-fluid {
-  padding: 5%;
+  padding: 4% 5% 6%;
 }
 
 .container {
@@ -90,16 +98,15 @@ a:hover {
   padding: 0.7em;
 }
 
-.navbar-brand {
+.brand-name {
   color: var(--shadow-color);
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 0 0.4em;
+  margin: 0 0.2em;
 }
 
-.navbar-brand:hover {
+.brand-name:hover {
   color: var(--bright-color);
-  text-decoration: none;
 }
 
 .logo {
@@ -109,7 +116,7 @@ a:hover {
   height: 25px;
 }
 
-/* JS fills the logo in color on hover. */
+/* JS fills the logo in color by detecting the brand name behavior. */
 .fill-highlight {
   fill: var(--bright-color);
 }
@@ -134,7 +141,7 @@ a:hover {
   border-radius: 1px;
 }
 
-.icon-bar + .icon-bar {
+.icon-bar+.icon-bar {
   margin-top: 4px;
 }
 
@@ -181,11 +188,13 @@ a:hover {
 .hero-title {
   display: flex;
   justify-content: center;
+  padding-left: 5%;
 }
 
 .kingfisher {
-  width: 8%;
+  width: 7%;
   max-width: 50px;
+  min-width: 25px;
   height: auto;
   align-self: start;
   position: relative; /* For Stacking Order */
@@ -233,7 +242,7 @@ a:hover {
   max-width: 90px;
   height: auto;
   position: absolute;
-  left: 30%;
+  left: 28%;
   bottom: 15%;
 }
 
@@ -252,15 +261,20 @@ a:hover {
 .flex-box {
   display: flex;
   justify-content: space-between;
+  padding-right: 4%;
+  margin-bottom: 1em;
+}
+
+.my-name {
+  margin-bottom: 0.1em;
 }
 
 .avatar {
-  max-width: 150px;
+  align-self: flex-start;
+  max-width: 130px;
   height: auto;
   border-radius: 50%;
-  border: solid 0.1em var(--accent-color);
-  outline: solid 0.15em var(--bright-color);
-  margin-bottom: 1em;
+  border: solid 0.1em var(--theme-color);
 }
 
 
@@ -300,7 +314,7 @@ a:hover {
 ------------------------------------- */
 .card {
   text-align: center;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.075);
 }
 
 .card:hover {
@@ -326,7 +340,7 @@ a:hover {
 /* Posts Section
 ------------------------------------- */
 .tweet-list {
-  margin: 10% 0;
+  margin-bottom: 2em;
 }
 
 #post li {
@@ -340,10 +354,6 @@ a:hover {
 
 /* Social Media Section
 ------------------------------------- */
-#social-media .container-fluid {
-  padding: 5% 5% 8%;
-}
-
 #social-media ul {
   padding-left: 0.2em;
 }
@@ -356,12 +366,13 @@ a:hover {
 /* Footer Area
 ------------------------------------- */
 .footer-container {
-  padding: 1.5% 0 0.5%;
+  padding: 1.5% 0 1.8%;
 }
 
 .copy-right {
   color: var(--shadow-color);
   font-size: 0.75rem;
+  margin: auto;
 }
 
 
@@ -369,7 +380,11 @@ a:hover {
  ------------------------------------- */
 @media (max-width: 767px) {
   h4, h5, h6 {
-    margin-top: 1.5em;
+    margin-top: 0.8em;
+  }
+
+  .container-fluid {
+    padding: 6% 5% 8%;
   }
 
   .flex-box {
@@ -377,12 +392,13 @@ a:hover {
   }
 
   .avatar {
-    width: 45%;
     align-self: end;
+    width: 25%;
+    min-width: 80px;
   }
 }
 
-@media (max-width: 220px) {
+@media (max-width: 214px) {
   #hero .container-fluid {
     padding: 24% 0 3%;
   }
