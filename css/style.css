@@ -107,6 +107,7 @@ section:target::before {
 
 .brand-name:hover {
   color: var(--bright-color);
+  text-decoration: none;
 }
 
 .logo {
@@ -201,17 +202,17 @@ section:target::before {
 }
 
 .top-cloud {
-  width: 15%;
+  width: 16%;
   height: auto;
   position: absolute;
-  right: 2%;
+  right: 5%;
 }
 
 .bottom-cloud {
-  width: 15%;
+  width: 16%;
   height: auto;
   position: absolute;
-  left: 2%;
+  left: 5%;
 }
 
 .svg-nature {
