@@ -90,6 +90,21 @@ section:target::before {
   text-align: start;
 }
 
+.heading-line {
+  position: relative;
+}
+
+.heading-line::after {
+  content: "";
+  background-color: var(--pale-theme-color);
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  display: block;
+  width: 60%;
+  height: 2.4px;
+}
+
 
 /* Navigation Bar Section
 ------------------------------------- */
@@ -388,6 +403,10 @@ section:target::before {
     padding: 6% 5% 8%;
   }
 
+  .heading-line::after {
+    width: 50%;
+  }
+
   .flex-box {
     flex-direction: column;
   }
@@ -399,7 +418,14 @@ section:target::before {
   }
 }
 
-@media (max-width: 214px) {
+@media (max-width: 575px) {
+  .heading-line::after {
+    bottom: -8px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 236px) {
   #hero .container-fluid {
     padding: 24% 0 3%;
   }
