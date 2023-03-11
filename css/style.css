@@ -157,7 +157,7 @@ section:target::before {
   border-radius: 1px;
 }
 
-.icon-bar + .icon-bar {
+.icon-bar +.icon-bar {
   margin-top: 4px;
 }
 
@@ -297,6 +297,7 @@ section:target::before {
 /* Skills Section
 ------------------------------------- */
 .skills-column {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -371,6 +372,7 @@ section:target::before {
 /* Social Media Section
 ------------------------------------- */
 #social-media ul {
+  list-style: none;
   padding-left: 0.2em;
 }
 
