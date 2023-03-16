@@ -315,8 +315,7 @@ section:target::before {
 ------------------------------------- */
 .skills-column {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
 }
 
 .skills-column li {
