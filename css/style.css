@@ -47,6 +47,10 @@ p {
   line-height: 2;
 }
 
+ul {
+  margin-bottom: 2em;
+}
+
 a {
   color: var(--linked-color);
   font-family: "Montserrat", sans-serif;
@@ -92,17 +96,30 @@ section:target::before {
 
 .heading-line {
   position: relative;
+  padding-bottom: 0.2em;
+  border-bottom: solid 1px var(--pale-theme-color);
+}
+
+.heading-line::before, .heading-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  bottom: -1.5px;
+}
+
+.heading-line::before {
+  background-color: var(--bg-tone-color);
+  width: 35%;
+  height: 50%;
+  transform: matrix(1, 0, -0.8, 1, 0, 0);
 }
 
 .heading-line::after {
-  content: "";
   background-color: var(--pale-theme-color);
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  display: block;
-  width: 60%;
-  height: 2.4px;
+  width: 32%;
+  height: 25%;
+  transform: matrix(1, 0, -0.8, 1, 2, 0);
 }
 
 
@@ -278,7 +295,7 @@ section:target::before {
   display: flex;
   justify-content: space-between;
   padding-right: 4%;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
 .my-name {
@@ -338,29 +355,25 @@ section:target::before {
   outline: solid 0.17em var(--rich-highlighted-color);
 }
 
-#projects a {
+.card a {
   display: block;
   text-decoration: none;
 }
 
 .card-nav {
-  color: var(--accent-color);
+  color: var(--linked-color);
   margin: 2% 0 0;
 }
 
 .card-url {
-  color: var(--contents-color);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 0.7rem;
 }
 
 
 /* Posts Section
 ------------------------------------- */
-.tweet-list {
-  margin-bottom: 2em;
-}
-
-#post li {
+#posts li {
   margin-bottom: 0.5em;
 }
 
@@ -397,16 +410,8 @@ section:target::before {
 /* Media Queries
  ------------------------------------- */
 @media (max-width: 767px) {
-  h4, h5, h6 {
-    margin-top: 0.8em;
-  }
-
   .container-fluid {
     padding: 6% 5% 8%;
-  }
-
-  .heading-line::after {
-    width: 50%;
   }
 
   .flex-box {
@@ -420,10 +425,13 @@ section:target::before {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 320px) {
+  .heading-line::before {
+    width: 22%;
+  }
+
   .heading-line::after {
-    bottom: -8px;
-    width: 100%;
+    width: 19%;
   }
 }
 
