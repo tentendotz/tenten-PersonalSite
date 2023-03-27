@@ -343,7 +343,7 @@ section:target::before {
 }
 
 
-/* Projects Section
+/* Works & Projects Common Section
 ------------------------------------- */
 .card {
   text-align: center;
@@ -434,7 +434,7 @@ section:target::before {
   }
 }
 
-@media (max-width: 236px) {
+@media (max-width: 214px) {
   #hero .container-fluid {
     padding: 24% 0 3%;
   }
