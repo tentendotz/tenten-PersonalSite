@@ -370,6 +370,27 @@ section:target::before {
 }
 
 
+/* Works Section
+------------------------------------- */
+.spec-column {
+  list-style: none;
+  padding-left: 0.5em;
+}
+
+.spec-column li {
+  margin-bottom: 0.4em;
+}
+
+.spec-container {
+  display: inline-block;
+  width: 96px;
+}
+
+.spec-title {
+  background-color: var(--rich-highlighted-color);
+}
+
+
 /* Posts Section
 ------------------------------------- */
 #posts li {
