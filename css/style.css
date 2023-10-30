@@ -237,14 +237,14 @@ section:target::before {
   width: 16%;
   height: auto;
   position: absolute;
-  right: 5%;
+  right: 3.5%;
 }
 
 .bottom-cloud {
   width: 16%;
   height: auto;
   position: absolute;
-  left: 5%;
+  left: 3.5%;
 }
 
 .svg-nature {
