@@ -18,18 +18,21 @@ window.twttr = (function (d, s, id) {
   return t;
 })(document, "script", "twitter-wjs");
 
-// For Twitter Timeline
-const tweetContent = document.querySelector(".tweet-user-timeline");
-twttr.widgets.createTimeline(
-  {
-    sourceType: "profile",
-    screenName: "tentenblog",
-  },
-  tweetContent,
-  {
-    theme: "light",
-    width: 300,
-    tweetLimit: 2,
-    chrome: "nofooter",
-  }
-);
+/* MARK: - Twitter Timeline Generation
+----------------------------------------------------- */
+const targetContainer = document.querySelector(".twitter-viewer");
+
+const dataSource = {
+  sourceType: "profile",
+  screenName: "tentenblog"
+};
+
+const options = {
+  theme: "light",
+  chrome: "nofooter",
+  width: 296,
+  height: 416,
+  tweetLimit: 2
+};
+
+twttr.widgets.createTimeline(dataSource, targetContainer, options);
