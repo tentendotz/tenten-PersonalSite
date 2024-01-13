@@ -1,11 +1,13 @@
-/* Fade-in effect
+/* Loader Animation for Fade-in effect
 ------------------------------------- */
 .disappeared {
   opacity: 0;
+  visibility: hidden;
 }
 
 .show-off {
   opacity: 1;
+  visibility: visible;
   transition: opacity 0.2s ease-out 0.3s;
 }
 
@@ -210,6 +212,19 @@ section:target::before {
 #hero .container-fluid {
   position: relative;
   padding: 8% 0 3%;
+}
+
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner-border {
+  border-color: var(--theme-color) var(--shadow-color) var(--shadow-color);
+  width: 3em;
+  height: 3em;
 }
 
 #hero .container {

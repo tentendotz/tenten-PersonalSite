@@ -9,7 +9,7 @@
   <title>TentenDotz</title>
 
   <!-- Scripts before firing DOMContentLoaded event -->
-  <script defer src="js/appearance.js"></script>
+  <script defer src="js/loading.js"></script>
   <script defer src="js/twitter.js"></script>
 
   <!-- Favicon and App Icon -->
@@ -110,10 +110,15 @@
     <!-- Hero Section -->
     <section id="hero">
 
-      <div class="container-fluid disappeared">
+      <div class="container-fluid">
+        <!-- Loader Animation -->
+        <div class="loading-container">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
 
-        <div class="container">
-
+        <div class="container disappeared">
           <img class="top-cloud" src="images/cloud.webp" alt="cloud-image" width="135" height="30">
 
           <div class="hero-title">
@@ -123,11 +128,9 @@
 
           <h2>Hi there, I'm Tenten.</h2>
           <img class="bottom-cloud" src="images/cloud.webp" alt="cloud-image" width="135" height="30">
-
         </div>
 
-        <div class="svg-nature">
-
+        <div class="svg-nature disappeared">
           <svg class="mountain-polygon" viewBox="0, 0, 1920, 350" preserveAspectRatio="none">
             <polygon points="1920 823 0 823 0 0 396 101 835 31 1574 149 1920 17 1920 823"></polygon>
           </svg>
@@ -138,7 +141,6 @@
           <img class="flamingo" src="images/flamingo.webp" alt="flamingo-image" width="140" height="140">
           <img class="fox" src="images/fox.webp" alt="fox-image" width="90" height="90">
           <img class="giraffe" src="images/giraffe.webp" alt="giraffe-image" width="300" height="300">
-
         </div>
 
       </div>
