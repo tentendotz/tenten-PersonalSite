@@ -16,7 +16,7 @@ brandName.addEventListener("mouseout", function () {
 ----------------------------------------------------- */
 const mql = window.matchMedia("(max-width: 767px)");
 const navbarList = document.querySelector(".navbar-nav").classList;
-const navItems = document.querySelectorAll(".nav-item");
+const navItems = document.querySelectorAll(".navbar-nav .nav-item");
 const navLinks = document.querySelectorAll("#navbarSupportedContent a");
 
 handleMediaQuery(mql);

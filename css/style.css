@@ -102,7 +102,8 @@ section:target::before {
   border-bottom: solid 1px var(--pale-theme-color);
 }
 
-.heading-line::before, .heading-line::after {
+.heading-line::before,
+.heading-line::after {
   content: "";
   display: block;
   position: absolute;
@@ -176,17 +177,18 @@ section:target::before {
   border-radius: 1px;
 }
 
-.icon-bar +.icon-bar {
+.icon-bar + .icon-bar {
   margin-top: 4px;
 }
 
-.nav-link {
+.navbar-nav .nav-link {
   color: var(--contrasting-theme-color);
   font-weight: bold;
 }
 
-.nav-link:hover {
+.navbar-nav .nav-link:hover {
   color: var(--light-highlighted-color);
+  text-decoration-color: var(--light-highlighted-color);
 }
 
 /* JS controls nav-item's padding. */
@@ -204,6 +206,10 @@ section:target::before {
 .dropdown-item {
   font-weight: bold;
   padding: 0.5em 1em;
+}
+
+.dropdown-item:active {
+  background-color: var(--rich-highlighted-color);
 }
 
 
@@ -362,7 +368,7 @@ section:target::before {
 ------------------------------------- */
 .card {
   text-align: center;
-  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0.125em 0.25em var(--shadow-color);
 }
 
 .card:hover {
@@ -408,10 +414,6 @@ section:target::before {
 
 /* Posts Section
 ------------------------------------- */
-#posts li {
-  margin-bottom: 0.5em;
-}
-
 .twitter-timeline {
   margin: auto;
 }
