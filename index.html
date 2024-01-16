@@ -525,9 +525,21 @@
               </p>
             </div>
 
-            <div class="col-md-6 col-sm-12 activity-container">
-              <!-- Embedded Twitter Timeline  -->
-              <div class="twitter-viewer"></div>
+            <div class="col-md-6 col-sm-12">
+              <div class="activity-container">
+
+                <!-- Embedded Mastodon Timeline  -->
+                <div class="mastodon-viewer">
+                  <iframe title="embedding-mastodon" allowfullscreen
+                    sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="296"
+                    height="366"
+                    src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Ffosstodon.org%2Fusers%2Ftentendotz&theme=light&size=85&header=false&replies=true&boosts=true">
+                  </iframe>
+                </div>
+                <!-- Embedded Twitter Timeline  -->
+                <div class="twitter-viewer"></div>
+
+              </div>
             </div>
 
           </div>

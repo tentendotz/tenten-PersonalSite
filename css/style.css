@@ -414,8 +414,23 @@ section:target::before {
 
 /* Posts Section
 ------------------------------------- */
-.twitter-timeline {
-  margin: auto;
+.activity-container {
+  width: 90%;
+  max-width: 296px;
+  margin: 0 auto;
+}
+
+.activity-container iframe {
+  width: 100%;
+  max-width: 296px;
+  box-sizing: border-box;
+  border-radius: 3.5%;
+  outline: solid 0.17em rgba(0, 0, 0, 0.02);
+  box-shadow: 0 0.125em 0.25em var(--shadow-color);
+}
+
+.mastodon-viewer iframe {
+  border: solid 1px var(--muted-color);
 }
 
 
