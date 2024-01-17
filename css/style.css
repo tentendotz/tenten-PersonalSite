@@ -53,7 +53,7 @@ ul {
   margin-bottom: 2em;
 }
 
-a {
+a, button {
   color: var(--linked-color);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -431,8 +431,32 @@ section:target::before {
 }
 
 #tab-bar button {
+  color: var(--linked-color);
+  border: solid 1px var(--pale-theme-color);
+  box-shadow: 0 0.125em 0.25em var(--shadow-color);
   flex-grow: 1;
   flex-basis: 0;
+}
+
+#tab-bar button:hover:not(.active) {
+  color: var(--rich-highlighted-color);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.11em;
+  text-underline-offset: 0.3em;
+  text-decoration-color: var(--rich-highlighted-color);
+  outline: solid 0.08em var(--rich-highlighted-color);
+}
+
+#mastodon-tab-bar.active {
+  color: var(--light-highlighted-color);
+  background-color: #6364ff;
+  text-decoration-line: none;
+}
+
+#twitter-tab-bar.active {
+  color: var(--light-highlighted-color);
+  background-color: #1da1f2;
+  text-decoration-line: none;
 }
 
 #tab-bar-content iframe {
