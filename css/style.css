@@ -414,13 +414,28 @@ section:target::before {
 
 /* Posts Section
 ------------------------------------- */
+
+
+
+/* Tab Bar Section
+------------------------------------- */
 .activity-container {
   width: 90%;
   max-width: 296px;
   margin: 0 auto;
 }
 
-.activity-container iframe {
+#tab-bar {
+  display: flex;
+  column-gap: 0.08em;
+}
+
+#tab-bar button {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+#tab-bar-content iframe {
   width: 100%;
   max-width: 296px;
   box-sizing: border-box;

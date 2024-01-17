@@ -527,17 +527,25 @@
 
             <div class="col-md-6 col-sm-12">
               <div class="activity-container">
-
-                <!-- Embedded Mastodon Timeline  -->
-                <div class="mastodon-viewer">
-                  <iframe title="embedding-mastodon" allowfullscreen
-                    sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" width="296"
-                    height="366"
-                    src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Ffosstodon.org%2Fusers%2Ftentendotz&theme=light&size=85&header=false&replies=true&boosts=true">
-                  </iframe>
+                <!-- Tab Bar -->
+                <div class="nav nav-tabs" id="tab-bar" role="tablist">
+                  <button class="nav-link active" id="mastodon-tab-bar" data-bs-toggle="tab" data-bs-target="#mastodon-tab-pane" type="button" role="tab" aria-controls="mastodon-tab-pane" aria-selected="true">Mastodon</button>
+                  <button class="nav-link" id="twitter-tab-bar" data-bs-toggle="tab" data-bs-target="#twitter-tab-pane" type="button" role="tab" aria-controls="twitter-tab-pane" aria-selected="false">Twitter</button>
                 </div>
-                <!-- Embedded Twitter Timeline  -->
-                <div class="twitter-viewer"></div>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="tab-bar-content">
+                  <!-- Embedded Mastodon Timeline  -->
+                  <div class="mastodon-viewer tab-pane fade show active" id="mastodon-tab-pane" role="tabpanel" aria-labelledby="mastodon-tab-bar" tabindex="0">
+                    <iframe title="embedding-mastodon" allowfullscreen
+                      sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox"
+                      width="296" height="366"
+                      src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Ffosstodon.org%2Fusers%2Ftentendotz&theme=light&size=85&header=false&replies=true&boosts=true">
+                    </iframe>
+                  </div>
+                  <!-- Embedded Twitter Timeline  -->
+                  <div class="twitter-viewer tab-pane fade" id="twitter-tab-pane" role="tabpanel" aria-labelledby="twitter-tab-bar" tabindex="0"></div>
+                </div>
 
               </div>
             </div>
