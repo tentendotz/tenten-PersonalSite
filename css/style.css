@@ -414,7 +414,27 @@ section:target::before {
 
 /* Posts Section
 ------------------------------------- */
+.call-out-container {
+  background-color: var(--bg-tone-color);
+  border: solid 1px var(--pale-theme-color);
+  border-radius: 0.375em;
+  padding: 1em;
+  margin-bottom: 2em;
+}
 
+.call-out-icon {
+  color: var(--accent-color);
+  margin-right: 0.4em;
+}
+
+.call-out-title {
+  border-bottom: solid 1px var(--muted-color);
+  margin-bottom: 0.4em;
+}
+
+.call-out-description {
+  margin-bottom: 0;
+}
 
 
 /* Tab Bar Section
