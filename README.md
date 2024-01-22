@@ -1,18 +1,22 @@
-# tenten-PersonalSite
+tenten-PersonalSite
+===================
 [https://tentendotz.github.io/tenten-PersonalSite/](https://tentendotz.github.io/tenten-PersonalSite/)
 
-
-## Stack
-
+Stack
+-----
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
-- Twitter API
 
+#### Frameworks Used:
+- [Bootstrap](https://getbootstrap.com/) - ver.5.2
 
-## License
+#### APIs Used:
+- [Mastofeed](https://github.com/fenwick67/mastofeed) - ver.2.0
+- [Twitter for Websites](https://developer.twitter.com/en/docs/twitter-for-websites) - Free Plan
 
+License
+-------
 - Source code: [MIT License](https://opensource.org/licenses/MIT)
 - Image files: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
@@ -21,4 +25,4 @@ Regarding the image files, you can't use them under the same terms.
 
 See the [LICENSE](./LICENSE) file.
 
----
+___
