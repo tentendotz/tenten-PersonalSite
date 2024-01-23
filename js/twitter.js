@@ -29,9 +29,9 @@ const dataSource = {
 
 const options = {
   theme: "light",
-  chrome: "nofooter",
+  chrome: ["noheader", "nofooter"],
   width: 296,
-  height: 416,
+  height: 366,
   tweetLimit: 2
 };
 

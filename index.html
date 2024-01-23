@@ -523,11 +523,38 @@
               <p>
                 I share my journey as a developer on both Mastodon and Twitter, so feel free to follow your preferred platform.
               </p>
+              <div class="call-out-container">
+                <p class="call-out-title"><i class="fa-solid fa-bullhorn call-out-icon"></i> Embedded timelines</p>
+                <p class="call-out-description">
+                  Due to changes in the Twitter API, my embedded Twitter may not be visible in your environment.
+                  In that case, please take a look at my embedded Mastodon.
+                </p>
+              </div>
             </div>
 
-            <div class="col-md-6 col-sm-12 activity-container">
-              <!-- Embedded Twitter Timeline  -->
-              <div class="twitter-viewer"></div>
+            <div class="col-md-6 col-sm-12">
+              <div class="activity-container">
+                <!-- Tab Bar -->
+                <div class="nav nav-tabs" id="tab-bar" role="tablist">
+                  <button class="nav-link active" id="mastodon-tab-bar" data-bs-toggle="tab" data-bs-target="#mastodon-tab-pane" type="button" role="tab" aria-controls="mastodon-tab-pane" aria-selected="true">Mastodon</button>
+                  <button class="nav-link" id="twitter-tab-bar" data-bs-toggle="tab" data-bs-target="#twitter-tab-pane" type="button" role="tab" aria-controls="twitter-tab-pane" aria-selected="false">Twitter</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="tab-bar-content">
+                  <!-- Embedded Mastodon Timeline  -->
+                  <div class="mastodon-viewer tab-pane fade show active" id="mastodon-tab-pane" role="tabpanel" aria-labelledby="mastodon-tab-bar" tabindex="0">
+                    <iframe title="embedding-mastodon" allowfullscreen
+                      sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox"
+                      width="296" height="366"
+                      src="https://www.mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Ffosstodon.org%2Fusers%2Ftentendotz&theme=light&size=85&header=false&replies=true&boosts=true">
+                    </iframe>
+                  </div>
+                  <!-- Embedded Twitter Timeline  -->
+                  <div class="twitter-viewer tab-pane fade" id="twitter-tab-pane" role="tabpanel" aria-labelledby="twitter-tab-bar" tabindex="0"></div>
+                </div>
+
+              </div>
             </div>
 
           </div>
@@ -549,6 +576,9 @@
           <ul translate="no">
             <li>
               <a href="https://github.com/tentendotz"><i class="fa-brands fa-github"></i> GitHub / @tentendotz</a>
+            </li>
+            <li>
+              <a href="https://fosstodon.org/@tentendotz"><i class="fa-brands fa-mastodon"></i> Mastodon / @tentendotz (@fosstodon.org)</a>
             </li>
             <li>
               <a href="https://twitter.com/tentenblog"><i class="fa-brands fa-x-twitter"></i> Twitter / @tentenblog</a>
